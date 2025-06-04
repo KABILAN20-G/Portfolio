@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>theperfectone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ===== Header Section ===== -->
+  <div id="header">
+    <div class="container">
+      <nav>
+        <h1 class="logo">Portfo<span>lio</span></h1>
+        <img src="/files/cropimageme.png" class="menu" alt="menu">
+
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#portfolio">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+
+      <div class="header-text">
+        <p>Hello, It's Me</p>
+        <h1><span>K</span>abilan <span>G</span> <br></h1>
+      </div>
+      <div class="inline-text">
+        <p>And I'm a</p>
+        <h3>Junior Web Developer</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== About Section ===== -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="files/WhatsApp Image 2025-06-02 at 20.14.43_9d1e0f9e.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I hold a Bachelor's degree in Electrical and Electronics Engineering from Nandha Engineering College. Alongside my core academic knowledge in electrical and electronics systems, I have also developed strong technical skills in programming and web development, including proficiency in Java, HTML and CSS. This blend of core engineering and technical expertise allows me to approach problems with both hardware and software perspectives.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+          </div>
+
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>JAVA</span><br>I can code and solve programming problems.</li>
+              <li><span>HTML</span><br>I can develop responsive websites.</li>
+              <li><span>CSS</span><br>I can design and style websites efficiently.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Frontend Development</span><br>A Fresher with good knowledge in Frontend Development</li>
+              <li><span>Embedded Systems - CodeBind Technologies</span><br>I have gained hands-on experience in microcontroller programming, interfacing sensors, and developing embedded applications using Embedded C.</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2021 - 2025</span><br>BE - Electrical and Electronics at Nandha Engineering College</li>
+              <li><span>2021</span><br>Higher Secondary at Govt Hr Sec School Vellode</li>
+              <li><span>2019</span><br>SSLC at Komarappa Sengunthar Hr Sec School</li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="achievements">
+            <ul>
+              <li>
+                <span>Coding Competitions</span><br>
+                ✔️ Secured a global rank within the top 1500 out of 19,000+ participants in the IEEEXtreme Programming Competition.<br>
+                ✔️ National Semifinalist in the Tata Imagination Challenge 2024, organized by the Tata Group, representing Nandha Engineering College (NEC), Erode.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Projects Section ===== -->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="projects-list">
+        <div>
+          <i class="fa-solid fa-puzzle-piece"></i>
+          <h2>TIC-TAC-TOE</h2>
+          <p>Developed a console-based Tic-Tac-Toe game in Java using object-oriented programming principles. I integrated an AI opponent with random move generation and implemented game logic, which included win/draw detection.</p>
+          <a href="https://github.com/KABILAN20-G/TIC-TAC-TOE">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-motorcycle"></i>
+          <h2>Regenerative Braking</h2>
+          <p>Developed a dual-battery regenerative braking system with fuzzy logic and PID control for efficient energy recovery and braking on slopes, using a PIC microcontroller for real-time control.</p>
+          <a href="https://drive.google.com/file/d/1m6IlFH_khAUtEIhux7GwDw4YybgR0His/view?usp=drive_link">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-solar-panel"></i>
+          <h2>Microcontroller-Based Bell Alarm System Development</h2>
+          <p>Designed and implemented an automated bell alarm system using a microcontroller to trigger alarms based on preset schedules.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Portfolio Section ===== -->
+  <div id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="https://t4.ftcdn.net/jpg/02/92/83/57/360_F_292835773_oImixQGFKLpOPnjfsbesHyqdjOk5hsxL.jpg">
+          <div class="layer">
+            <h3>JAVA</h3>
+            <p>Experienced in writing clean, modular code with Java. Comfortable with data structures, algorithms, and desktop apps.</p>
+            <a href="https://github.com/KABILAN20-G/GFG-Problems"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="https://www.milesweb.in/blog/wp-content/uploads/2024/10/how-to-create-a-website-using-html.png" width="352" height="273">
+          <div class="layer">
+            <h3>HTML</h3>
+            <p>Can structure web pages using clean, semantic HTML. Familiar with forms, media embedding, and accessibility tags.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="https://static.vecteezy.com/system/resources/previews/053/953/511/non_2x/computer-screen-showing-css-code-programming-web-development-vector.jpg">
+          <div class="layer">
+            <h3>CSS</h3>
+            <p>Capable of designing modern UIs with smooth transitions. Understands class specificity, layout techniques, and theming.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">View More</a>
+    </div>
+  </div>
+
+  <!-- ===== Contact Section ===== -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-regular fa-paper-plane"></i> kabilg2004@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 8870643476</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/kabilang2004/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/KABILAN20-G"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="https://drive.google.com/file/d/17lVEN7HM4S0o-cS0XaRxDw1pD18YnC1x/view?usp=drive_link" class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name">
+            <input type="email" name="Email" placeholder="Your Email">
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © 2024 Kabilan. All Rights Reserved.</p>
+    </div>
+  </div>
+
+  <!-- ===== JavaScript Section ===== -->
+  <script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    const sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyAMASqAx6uyT5QS9AHXCvJMSsLVL0aTHFeO0vMFCpld1OROaEOkAL6tW5e4eS98k_-/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    if (form) {
+      form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then(response => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch(error => console.error('Error!', error.message));
+      });
+    }
+  </script>
+
+</body>
+</html>
